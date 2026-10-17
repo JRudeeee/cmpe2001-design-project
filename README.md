@@ -35,5 +35,3 @@ Built with STM32CubeMX (CMake toolchain) and the STM32Cube extension for VS Code
 
 - **Lab LCD:** replace `LCD1602_I2C.h/.c` with the lab's PCF8574 version – same API, nothing else changes.
 - `sss_detect.h`: reading period set to 4000 ms (the sensor module only updates every ~4 s) and stale timeout to 10000 ms.
-- After regenerating from CubeMX, check the user sources are still listed in `CMakeLists.txt` (`target_sources`).
-- If the LCD is blank after flashing, power-cycle the board (I2C bus can lock up mid-transfer).
